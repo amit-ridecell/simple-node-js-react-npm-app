@@ -20,10 +20,9 @@ pipeline {
                 sh './jenkins/scripts/test.sh' 
             }
         }
-    }
-
-    steps {
-                // Create a dummy file in the repo
+        stage('Test branch ') { 
+            steps {
                 sh('echo \$TARGET_BRANCH')
-            }
+        }
+    }
 }
