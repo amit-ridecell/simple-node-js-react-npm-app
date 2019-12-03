@@ -21,4 +21,9 @@ pipeline {
             }
         }
     }
+
+    steps {
+                // Create a dummy file in the repo
+                sh('echo \$TARGET_BRANCH')
+            }
 }
