@@ -20,9 +20,4 @@ pipeline {
                 sh './jenkins/scripts/test.sh' 
             }
         }
-        stage('Test branch ') { 
-            steps {
-                sh('echo test')
-        }
-    }
 }
