@@ -22,7 +22,7 @@ pipeline {
         }
         stage('Test branch ') { 
             steps {
-                sh('echo \$TARGET_BRANCH')
+                sh('echo test')
         }
     }
 }
